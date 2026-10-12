@@ -1,0 +1,38 @@
+body {
+    margin: 24px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Bảng chiếm toàn bộ chiều rộng và gộp đường viền liền kề. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Đường viền cho bảng, ô tiêu đề và ô dữ liệu. */
+table, th, td {
+    border: 1px solid black;
+}
+
+/* Khoảng cách giữa nội dung và đường viền ô. */
+th, td {
+    padding: 15px;
+}
+
+/* Chiều cao, căn trái và màu sắc của tiêu đề. */
+th {
+    height: 50px;
+    text-align: left;
+    background-color: #333;
+    color: white;
+}
+
+/* Dữ liệu căn xuống dưới trong ô cao 80px. */
+td {
+    height: 80px;
+    text-align: left;
+    vertical-align: bottom;
+    background-color: #f2f2f2;
+    color: #333;
+}
