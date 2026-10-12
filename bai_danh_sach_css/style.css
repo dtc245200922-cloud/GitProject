@@ -1,0 +1,45 @@
+/* Bố cục chung */
+body {
+    margin: 0;
+    padding: 24px 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f6fa;
+    color: #25334a;
+}
+main { max-width: 800px; margin: auto; padding: 24px; background-color: white; }
+h1 { color: #245b98; }
+h2 { font-size: 20px; margin-top: 30px; }
+h3 { font-size: 16px; }
+li { margin: 6px 0; }
+
+/* Thay đổi kiểu đánh dấu */
+.subjects { list-style-type: square; }
+.steps { list-style-type: upper-roman; }
+
+/* Dùng ảnh cục bộ làm dấu đánh dấu */
+.tools { list-style-image: url("marker.png"); }
+
+/* Hai danh sách có cùng nội dung để so sánh vị trí dấu */
+.position { max-width: 360px; padding: 12px 28px; background-color: #f1f5f9; }
+.position li { background-color: #e2e8f0; padding: 8px; }
+.outside { list-style-position: outside; }
+.inside { list-style-position: inside; }
+
+/* Rút gọn: kiểu đánh dấu, vị trí và hình ảnh */
+.shorthand { list-style: square inside url("marker.png"); padding: 14px; }
+
+/* Màu nền, màu chữ, khoảng cách trong và giữa các mục */
+.languages { background-color: #e4f2eb; color: #185b3b; padding: 16px 36px; }
+.languages li { background-color: #f5fcf8; padding: 6px 10px; margin: 8px 0; }
+
+/* Bài tập tổng hợp */
+.roadmap {
+    list-style: upper-roman inside none;
+    background-color: #e8effb;
+    color: #214b89;
+    padding: 16px 24px;
+    margin: 16px 0;
+}
+.roadmap li { background-color: #f6f9ff; padding: 8px 12px; margin: 8px 0; }
+@media (max-width: 480px) { main { padding: 16px; } }
