@@ -1,0 +1,47 @@
+/* Bộ chọn phần tử (element). */
+body {
+    margin: 0;
+    padding: 32px 16px;
+    background-color: #edf3fa;
+    color: #26344a;
+    font-family: Arial, sans-serif;
+}
+
+/* Bộ chọn lớp (class). */
+.content {
+    max-width: 650px;
+    margin: auto;
+    padding: 28px;
+    background-color: white;
+    border: 1px solid #d6e1ef;
+    border-radius: 10px;
+}
+.introduction { line-height: 1.7; }
+.hobbies { padding-left: 28px; }
+.hobbies li { padding: 8px 12px; margin: 10px 0; border-radius: 4px; }
+
+/* Bộ chọn ID. */
+#main-title { text-align: center; color: #245b98; }
+
+/* Bộ chọn nhóm (grouping). */
+p, ul { font-size: 16px; }
+h1, button { font-family: Arial, sans-serif; }
+
+/* Lớp giả (pseudo-classes): mỗi mục có màu khác nhau. */
+.hobbies li:nth-child(1) { background-color: #e4f3e9; color: #20633c; }
+.hobbies li:nth-child(2) { background-color: #e7effd; color: #285497; }
+.hobbies li:nth-child(3) { background-color: #fff0e0; color: #8c4d16; }
+
+.action-button {
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #2563a6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+/* Hiệu ứng khi đưa chuột lên nút. */
+.action-button:hover { background-color: #174577; transform: translateY(-2px); }
+.action-button:focus-visible { outline: 3px solid #91b9eb; outline-offset: 3px; }
