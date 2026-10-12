@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu dropdown dọc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menu dropdown dọc</h1>
+    <div id="menu">
+        <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li>
+                <a href="#courses">Khóa học ▸</a>
+                <ul>
+                    <li><a href="#html">HTML &amp; CSS</a></li>
+                    <li><a href="#javascript">JavaScript</a></li>
+                    <li><a href="#java">Java</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#resources">Tài liệu ▸</a>
+                <ul>
+                    <li><a href="#lessons">Bài giảng</a></li>
+                    <li><a href="#exercises">Bài tập</a></li>
+                    <li><a href="#references">Tham khảo</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </div>
+    <main>
+        <section id="home"><h2>Trang chủ</h2><p>Di chuột vào Khóa học hoặc Tài liệu để mở menu con.</p></section>
+        <section id="courses"><h2>Khóa học</h2><p id="html">HTML &amp; CSS: xây dựng và định dạng trang web.</p><p id="javascript">JavaScript: tạo tương tác cho trang web.</p><p id="java">Java: luyện tập lập trình hướng đối tượng.</p></section>
+        <section id="resources"><h2>Tài liệu</h2><p id="lessons">Bài giảng tổng hợp kiến thức.</p><p id="exercises">Bài tập thực hành.</p><p id="references">Tài liệu tham khảo hỗ trợ học tập.</p></section>
+        <section id="contact"><h2>Liên hệ</h2><p>Trao đổi và hỗ trợ học tập.</p></section>
+    </main>
+</body>
+</html>

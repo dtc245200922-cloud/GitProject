@@ -1,0 +1,35 @@
+body { font-family: Arial, sans-serif; margin: 24px; color: #222; }
+h1 { font-size: 24px; }
+#menu ul, #menu li { margin: 0; padding: 0; }
+#menu li {
+    list-style: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 30px;
+    cursor: pointer;
+}
+#menu a { display: block; text-decoration: none; color: white; white-space: nowrap; }
+#menu li:hover, #menu li:focus-within { background-color: #b22222; }
+#menu li > ul {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    visibility: hidden;
+    z-index: 10;
+}
+/* Nối khoảng cách 20px để con trỏ đi sang menu con không làm menu đóng. */
+#menu li > ul::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 20px;
+}
+#menu li:hover > ul, #menu li:focus-within > ul { visibility: visible; }
+#menu a:focus-visible { outline: 2px solid white; outline-offset: -2px; }
+main { max-width: 650px; margin-top: 32px; }
+section { margin-bottom: 28px; }
